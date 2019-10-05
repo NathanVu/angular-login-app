@@ -1,1 +1,18 @@
 <p>signup works!</p>
+
+<h3> email: </h3>
+
+<form>
+    <label>First name:</label><input type="text" [(ngModel)]="firstName" name="firstName"><br>
+    <label>Last name:</label><input type="text" [(ngModel)]="lastName" name="lasttName"><br>
+    <label>email:</label><input type="text" [(ngModel)]="email" name="email"><br>
+    <label>password:</label><input type="password" [(ngModel)]="password" name="password"><br>
+    <input type="button" value="Submit" onclick="signUp()"/>
+</form>
+
+<p>first name: {{firstName}}</p>
+<p>last name: {{lastName}}</p>
+<p>email: {{email}}</p>
+<p>password: {{password}}</p>
+
+
