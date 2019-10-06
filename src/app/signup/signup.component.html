@@ -7,7 +7,8 @@
     <label>Last name:</label><input type="text" [(ngModel)]="lastName" name="lasttName"><br>
     <label>email:</label><input type="text" [(ngModel)]="email" name="email"><br>
     <label>password:</label><input type="password" [(ngModel)]="password" name="password"><br>
-    <input type="button" value="Submit" onclick="signUp()"/>
+    <!-- <input type="button" value="Submit" onClick='signUp()'/> -->
+    <button (click)="signUp()">Sign up</button>
 </form>
 
 <p>first name: {{firstName}}</p>
@@ -16,3 +17,9 @@
 <p>password: {{password}}</p>
 
 
+
+<div *ngIf="this.userCredentialsService.credentialInput.length >0">
+<h1> service stuff</h1>
+<p>{{this.userCredentialsService.credentialInput[0]?.firstName}}</p>
+<p>{{this.userCredentialsService.credentialInput[0]?.email}}</p> 
+</div>

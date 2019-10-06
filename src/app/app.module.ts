@@ -8,6 +8,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserCredentialsService } from './user-credentials.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule ,
 
   ],
-  providers: [],
+  providers: [UserCredentialsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
